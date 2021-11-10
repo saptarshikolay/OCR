@@ -21,7 +21,7 @@ for i, a in enumerate(boxes.splitlines()):
             cv2.rectangle(img, (x, y), (w + x, h + y), (0, 0, 255), 1)             #creating rectangle around words
             cv2.putText(img, a[11], (x, y - 5), cv2.FONT_HERSHEY_COMPLEX, 0.5, (255, 0, 0), 1)      #include corresponding texts
 
-cv2.imshow('OCR', img)             #showing the results
+cv2.imshow('Result', img)             #showing the results
 cv2.waitKey(0)
 if  ord('q'):
     cv2.destroyAllWindows()
